@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>backend</name>
 	<description>Demo project for Spring Boot</description>
+	<package>war</package>
 	<url/>
 	<licenses>
 		<license/>
@@ -57,6 +58,7 @@
 	</dependencies>
 
 	<build>
+	<finalName>cars</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
