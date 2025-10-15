@@ -24,12 +24,12 @@ public class CarController {
 	        this.repo = repo;
 	    }
 
-	    @GetMapping
+	    @GetMapping("/all")
 	    public List<Car> getAllCars() {
 	        return repo.findAll();
 	    }
 
-	    @PostMapping
+	    @PostMapping("/add")
 	    public Car addCar(@RequestBody Car car) {
 	        return repo.save(car);
 	    }
@@ -44,7 +44,7 @@ public class CarController {
 	        return repo.save(existing);
 	    }
 
-	    @DeleteMapping("/{id}")
+	    @DeleteMapping("del/{id}")
 	    public void deleteCar(@PathVariable Long id) {
 	        repo.deleteById(id);
 	    }
