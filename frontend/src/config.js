@@ -1,4 +1,4 @@
 const config = { 
-    baseUrl: "http://localhost:2030/frontendcars" 
+    baseUrl: "http://localhost:2030/cars" 
 };
 export default config;
